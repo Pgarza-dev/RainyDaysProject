@@ -25,3 +25,10 @@
   height: 100px;
   width: 300px;
 }
+
+.list-menu {
+  display: grid;
+  grid-template-columns: repeat(9, 5fr);
+  /* column-gap: 10px; */
+  margin-top: 20px;
+}
