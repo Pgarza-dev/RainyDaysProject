@@ -1,4 +1,27 @@
-img {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  align-items: center;
+}
+
+.search-bar {
+  height: 30px;
+  width: 550px;
+}
+
+.main-img {
   height: 1000px;
   width: 100%;
+}
+
+.logo {
+  height: 100px;
+  width: 300px;
 }
