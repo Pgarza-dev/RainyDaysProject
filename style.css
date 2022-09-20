@@ -38,6 +38,15 @@ li {
   margin-top: 20px;
 }
 
+h1 {
+  text-align: center;
+}
+
+p {
+  /* display: block; */
+  display: inline-block;
+}
+
 .most-sold {
   height: 300px;
   width: 250px;
