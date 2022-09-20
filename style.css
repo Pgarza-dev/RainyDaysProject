@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+li {
+  list-style: none;
+}
+
 .search-bar {
   height: 30px;
   width: 550px;
@@ -31,8 +35,12 @@
 .list-menu {
   display: grid;
   grid-template-columns: repeat(9, 5fr);
-  /* column-gap: 10px; */
   margin-top: 20px;
+}
+
+.most-sold {
+  height: 300px;
+  width: 200px;
 }
 
 .footer-img {
