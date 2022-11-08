@@ -19,18 +19,10 @@ nav {
 }
 
 header {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   /* overflow: hidden; */
 }
-
-/* div {
-  overflow: hidden;
-}
-
-main {
-  overflow: hidden;
-} */
 
 .logo {
   background-image: url(../images/RainyDays_Logo.png);
@@ -50,7 +42,7 @@ main {
 }
 
 .header-li {
-  display: flex;
+  display: inline-flex;
   float: right;
   flex-direction: row;
   flex: 1;
@@ -72,6 +64,7 @@ main {
   background-color: #8c8418;
   display: flex;
   flex-direction: column;
+  position: fixed;
 
   /* background-color: #8c8418;
   color: white;
@@ -87,6 +80,15 @@ main {
   color: white;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-container {
   background-color: #8c8418;
 }
@@ -94,7 +96,7 @@ main {
 .nav-list {
   display: flex;
   text-align: center;
-  gap: 1rem;
+  /* gap: 1rem; */
   flex-wrap: wrap;
   list-style: none;
   border-top: 1px solid white;
@@ -108,31 +110,24 @@ main {
   color: white;
   list-style: none;
   text-decoration: none;
+  margin: 0px 30px 0px 30px;
 }
 
 .nav-list a:hover {
-  font-size: 125%;
+  border: 1px solid white;
+  border-color: white;
+  background-color: white;
+  color: #8c8418;
+  border-radius: 10px;
+  padding: 3px;
 }
 
 .nav-list li {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   flex-shrink: 1;
 
   /* display: inline-block; */
 }
-
-/* .nav-container {
-  
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 10px;
-  align-items: center;
-} */
-
-/* li {
-  list-style: none;
-  margin: 0px;
-} */
 
 .search-bar {
   height: 30px;
@@ -357,6 +352,63 @@ section a {
 
 /* --------JACKETS PAGE--------- */
 
+.login-in {
+  border: 1px solid white;
+  max-width: 390px;
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.full-name,
+.email-address,
+.new-password,
+.confirm-password {
+  border: 2px solid #c1c1c145;
+  height: 45px;
+  width: 315px;
+  border-radius: 10px;
+  margin: 10px auto 10px auto;
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 5%);
+}
+.full-name:hover,
+.email-address:hover,
+.new-password:hover,
+.confirm-password:hover {
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 /15%);
+}
+
+.privacy-text {
+  margin-top: 30px;
+  padding: 0px 50px 0px 50px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 45%);
+}
+.confirm-button {
+  width: 315px;
+  height: 45px;
+  font-size: 18px;
+  border: 2px solid #c1c1c145;
+  border-radius: 10px;
+  margin: 50px auto 50px auto;
+  background-color: white;
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 5%);
+}
+
+#member:hover {
+  text-decoration: underline;
+}
+
+.confirm-button:hover {
+  background-color: #ff7700;
+}
 .home-cta {
   display: inline-block;
 }
@@ -419,7 +471,7 @@ section a {
 
 .box-3 {
   max-width: 390px;
-  width: 300px;
+  /* width: 300px; */
   margin-left: 250px;
   /* margin-right: auto;
   margin-left: auto; */
@@ -475,7 +527,7 @@ h3 {
 .s-button {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -488,7 +540,7 @@ h3 {
 } */
 
 .m-button {
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -497,7 +549,7 @@ h3 {
 }
 
 .l-button {
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -506,7 +558,7 @@ h3 {
 }
 
 .xl-button {
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -517,7 +569,7 @@ h3 {
 .xxl-button {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -525,7 +577,7 @@ h3 {
   font-weight: bold;
 }
 .on-hover:hover {
-  background-color: #ffaa00;
+  background-color: #ff7700;
 }
 
 /* .size-selection-border {
@@ -559,7 +611,7 @@ h3 {
   margin-top: 15px;
   border: none;
   border-radius: 5px;
-  width: 57px;
+  width: 65px;
   display: flex;
 }
 
@@ -634,9 +686,9 @@ h3 {
   gap: 0.5em;
 }
 
-.color-choice-turquoise {
-  border: 1px solid rgb(33, 170, 177);
-  background-color: rgb(33, 170, 177);
+.color-choice-black {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   height: 15px;
   width: 15px;
 }
@@ -644,22 +696,37 @@ h3 {
 .color-choice-red {
   border: 1px solid red;
   background-color: red;
+  border-color: white;
   height: 15px;
   width: 15px;
+}
+
+.color-choice-red:hover {
+  border-color: red;
 }
 
 .color-choice-blue {
   border: 1px solid blue;
   background-color: blue;
+  border-color: white;
   height: 15px;
   width: 15px;
+}
+
+.color-choice-blue:hover {
+  border-color: blue;
 }
 
 .color-choice-green {
   border: 1px solid green;
   background-color: green;
+  border-color: white;
   height: 15px;
   width: 15px;
+}
+
+.color-choice-green:hover {
+  border-color: green;
 }
 
 .review-stars {
@@ -668,6 +735,11 @@ h3 {
   margin-top: 12px;
   justify-content: space-between;
 }
+
+#info-box {
+  text-align: left;
+}
+
 .info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
   width: 400px;
@@ -679,9 +751,17 @@ h3 {
   background-color: rgb(255, 255, 255);
 }
 
+.info-box:hover {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 15%);
+}
 .orders-card {
   display: flex;
   padding-top: 160px;
+  /* margin-bottom: -105px; */
+}
+
+#orders-card {
+  margin-bottom: -105px;
 }
 
 .your-orders {
@@ -825,15 +905,16 @@ INFORMATION PAGE------------ */
   padding: 20px 0px 0px 20px;
   text-align: left;
   font-family: arial;
+  border-radius: 10px;
   background-color: rgb(255, 255, 255);
 }
 
 .purchase-info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
-  height: 325px;
-  width: 520px;
+  height: 400px;
+  width: 900px;
   margin: 20px 0px 20px 30px;
-  border-radius: 3px;
+  border-radius: 10px;
   margin-left: 30px;
   padding-top: 3px;
   padding-left: 10px;
@@ -843,27 +924,162 @@ INFORMATION PAGE------------ */
 .name-input,
 .street-input,
 .city-input {
-  border: 2px solid #c1c1c1;
-  height: 30px;
+  border: 1px solid #c1c1c1;
+  height: 45px;
+  width: 437px;
   border-radius: 5px;
   margin: 10px 0px 10px 0px;
 }
 
-.emial-input,
+.email-input,
 .company-input {
-  border: 2px solid #c1c1c1;
-  height: 30px;
+  border: 1px solid #c1c1c1;
+  height: 45px;
   border-radius: 5px;
-  width: 490px;
+  width: 878px;
   margin-bottom: 10px;
 }
 
 .post-code-input,
 .country-input {
-  border: 2px solid #c1c1c1;
-  height: 30px;
+  border: 1px solid #c1c1c1;
+  height: 45px;
+  width: 437px;
   border-radius: 5px;
 }
+
+.delivery-info-box {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
+  height: 225px;
+  width: 900px;
+  margin: 20px 0px 20px 30px;
+  border-radius: 10px;
+  margin-left: 30px;
+  padding-top: 3px;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.card-number-input,
+.card-name-input,
+.city-input {
+  border: 1px solid #c1c1c1;
+  height: 45px;
+  width: 437px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.card-number,
+.name-on-card,
+.password {
+  border: 1px solid #c1c1c1;
+  height: 45px;
+  width: 437px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.card-type,
+.experation-date,
+.ccv {
+  border: 1px solid #c1c1c1;
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.secure-payment {
+  background-color: #ffaa00;
+  border: 1px solid #ffaa00;
+  border-radius: 10px;
+  width: 150px;
+  height: 35px;
+  font-weight: 100;
+  margin-top: 35px;
+}
+
+input::placeholder {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.secure-payment:hover {
+  background-color: #ff7700;
+  border: #ff7700;
+}
+
+.your-orders-float-right {
+  float: right;
+  margin-top: 160px;
+  margin-right: 190px;
+}
+
+/* ------------
+---------------
+THIS IS THE AFTER PURCHASES PAGE
+------------- */
+
+#congratulations-box {
+  padding-top: 160px;
+}
+.congratulations-box {
+  border: 1px solid none;
+  border-radius: 10px;
+  background-color: #c5c18a;
+  margin-right: auto;
+  margin-left: auto;
+  width: 800px;
+  height: 540px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.congratulations-text-one {
+  background-color: white;
+  border: 1px solid none;
+  border-radius: 10px;
+  padding: 20px 65px 20px 65px;
+  margin: 0px 10px 50px 10px;
+}
+
+.congratulations-text-one > p {
+  margin-bottom: 10px;
+}
+
+.click-view-order {
+  color: #ffaa00;
+  text-decoration: underline;
+}
+
+.click-view-order:hover {
+  color: #ff7700;
+}
+
+.purchase-discount-code {
+  border: 1px solid none;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0px auto 0px auto;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.view-my-order {
+  margin-top: 55px;
+  color: #000;
+  text-decoration: underline;
+}
+
+/* .flex {
+  display: flex;
+} */
 
 /* .product {
   background-image: url(../images/RainyDays_Jacket2.png);
@@ -874,6 +1090,8 @@ INFORMATION PAGE------------ */
 } */
 
 /* PAGE RESPONSIVNESS */
+@media (max-width: 600px) {
+}
 
 /* Free shipping */
 @media (max-width: 1000px) {
@@ -886,9 +1104,21 @@ INFORMATION PAGE------------ */
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 1000px) {
   .footer-columns {
     flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .social-media-icons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-img {
+    width: 500px;
   }
 }
